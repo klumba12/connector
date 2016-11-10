@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="../dist/bundle.css">
+    <title>NG Connector Demo</title>
+</head>
+<body ng-controller="ng.connector.demo.ctrl">
+
+<h4 class="connect-hint" ng-if="!model.length">Connect circles</h4>
+<ng-connector-pool model="model">
+    <ng-connector ng-repeat="item in list track by $index"
+                  model="$index">
+        <div class="connect-item"
+             ng-style="::{top: item.top + 'px', left: item.left + 'px'}">
+            #{{::$index}} circle
+        </div>
+    </ng-connector>
+</ng-connector-pool>
+
+
+</body>
+</html>
+
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../dist/bundle.js"></script>
+<script src="./demo.js"></script>
+
+

@@ -1,0 +1,19 @@
+.connect-hint {
+    position: absolute;
+    top: 210px;
+    left: 160px;
+    opacity: 0.3;
+    width: 150px;
+}
+
+.connect-item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #cceaf1;
+    border-radius: 100px;
+    border: 1px solid #3eb1c8;
+    line-height: 100px;
+    text-align: center;
+    z-index: 20;
+}
