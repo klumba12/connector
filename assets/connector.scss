@@ -1,0 +1,78 @@
+ng-connector-pool {
+    .ng-connector-edge {
+        position: absolute;
+        z-index: 17;
+        opacity: 0.6;
+        height: 8px;
+        cursor: pointer !important;
+
+        &.left {
+            .ng-connector-edge-tooltip {
+                transform: rotateZ(180deg);
+                top: -18px;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+        }
+
+        &.drag {
+            cursor: default !important;
+
+            .ng-connector-edge-end {
+                right: 0px !important;
+            }
+        }
+
+        .ng-connector-edge-body {
+            height: 2px;
+            background: #3eb1c8;
+            position: relative;
+
+            .ng-connector-edge-tooltip {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+
+                span {
+                    font-size: 12px;
+                    color: grey;
+                }
+            }
+
+            .ng-connector-edge-start,
+            .ng-connector-edge-end {
+                display: block;
+                position: absolute;
+            }
+
+            .ng-connector-edge-start {
+                width: 32px;
+                height: 32px;
+                background: #3eb1c8;
+                border-radius: 32px;
+                top: -15px;
+                left: 21px;
+            }
+
+            .ng-connector-edge-end {
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-left: 8px solid #3eb1c8;
+                right: 50px;
+                background: transparent !important;
+                top: -8px;
+            }
+        }
+    }
+}
