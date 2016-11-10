@@ -1,0 +1,35 @@
+{
+  "name": "ng-connector",
+  "version": "1.0.0",
+  "description": "Allow to connect any html elements",
+  "main": "index.js",
+  "directories": {
+    "demo": "demo html page",
+    "src": "scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klumba12/connector.git"
+  },
+  "keywords": [
+    "angular",
+    "connector"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klumba12/connector/issues"
+  },
+  "homepage": "https://github.com/klumba12/connector#readme",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "link": "^0.1.5",
+    "node-sass": "*",
+    "npm": "^3.10.9",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "^1.13.3"
+  }
+}
