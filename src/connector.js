@@ -10,11 +10,11 @@ function Connector($compile, $document, utility) {
    return {
       restrict: 'E',
       scope: {
-         canDrag: '=?canDrag',
-         canDrop: '=?canDrop',
-         model: '=model',
-         class: '=?class',
-         tooltip: '=?tooltip',
+         canDrag: '=?cnCanDrag',
+         canDrop: '=?cnCanDrop',
+         model: '=cnModel',
+         class: '=?cnClass',
+         tooltip: '=?cnTooltip'
       },
       controller: ['$scope', '$element', function ($scope, $element) {
          var self = this,

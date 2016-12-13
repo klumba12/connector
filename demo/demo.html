@@ -9,9 +9,9 @@
 <body ng-controller="ng.connector.demo.ctrl">
 
 <h4 class="connect-hint" ng-if="!model.length">Connect circles</h4>
-<ng-connector-pool model="model">
+<ng-connector-pool cn-model="model">
     <ng-connector ng-repeat="item in list track by $index"
-                  model="$index">
+                  cn-model="$index">
         <div class="connect-item"
              ng-style="::{top: item.top + 'px', left: item.left + 'px'}">
             #{{::$index}} circle

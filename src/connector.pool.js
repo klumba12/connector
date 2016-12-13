@@ -11,13 +11,13 @@ function ConnectorPool($log, merge, jobLine, Event) {
    return {
       restrict: 'E',
       scope: {
-         model: '=model',
-         selection: '=?selection',
-         tooltip: '=?tooltip',
-         debounce: '=?debounce',
-         style: '=?style',
-         template: '=?template',
-         layout: '@layout'
+         model: '=cnModel',
+         selection: '=?cnSelection',
+         tooltip: '=?cnTooltip',
+         debounce: '=?cnDebounce',
+         style: '=?cnStyle',
+         template: '=?cnTemplate',
+         layout: '@cnLayout'
       },
       controller: ['$scope', '$element', function ($scope, $element) {
          var self = this,
